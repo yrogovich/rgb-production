@@ -1,0 +1,27 @@
+// Base
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include primaryFont;
+    font-size: var(--body-font-size);
+    color: var(--font-color);
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: auto;
+
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+::selection {
+    background-color: var(--selection);
+}
+
+img {
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-optimize-contrast;
+}

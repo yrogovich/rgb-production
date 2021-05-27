@@ -1,0 +1,76 @@
+# WordPress Theme #
+
+**/themes/**/public/**/*.css
+**/themes/**/public/**/*.js
+**/themes/**/vendor/
+
+# Gulp generated files #
+
+node_modules
+
+# WordPress generated files #
+
+*.log
+**/wp-content/advanced-cache.php
+**/wp-content/backup-db/
+**/wp-content/backups/
+**/wp-content/blogs.dir/
+**/wp-content/cache/
+**/wp-content/upgrade/
+**/wp-content/wp-cache-config.php
+*.po~
+*.pot~
+
+# Visual Studio Code generated files #
+
+.vscode
+
+# PHPStorm #
+
+.idea
+
+# Windows generated files #
+
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# OS generated files #
+
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Others generated files #
+
+*.bak
+.dropbox
+.dropbox.attr
+.dropbox.cache
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+.svn
+.tgitconfig

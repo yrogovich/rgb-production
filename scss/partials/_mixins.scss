@@ -1,0 +1,35 @@
+@mixin primaryFont {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin rwd($breakpoint, $breakpointUp : false) {
+
+  @if ($breakpointUp != false) {
+
+    @if map-has-key($breakpointsUp, $breakpoint) {
+
+      @media #{inspect(map-get($breakpointsUp, $breakpoint))} {
+        @content;
+      }
+
+    } @else {
+
+      @warn 'Unfortunately, not found breakpoint called `#{$breakpoint}`!';
+
+    }
+
+  } @else {
+
+    @if map-has-key($breakpointsDown, $breakpoint) {
+
+      @media #{inspect(map-get($breakpointsDown, $breakpoint))} {
+        @content;
+      }
+
+    } @else {
+
+      @warn 'Unfortunately, not found breakpoint called `#{$breakpoint}`!';
+
+    }
+  }
+}

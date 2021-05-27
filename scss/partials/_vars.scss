@@ -1,0 +1,36 @@
+:root {
+    --primary: #1A2254;
+    --primary-light: #1511CB;
+    --secondary: #FFFF08;
+
+    --selection: #FFFF08;
+
+    --font-color: #3C3C46;
+    --gray-bg: #141414;
+    --gray-font: #8A8A8A;
+
+    --body-font-size: 1.6rem;
+    --container-width: 1200px;
+}
+
+$breakpointsDown : (
+  'phone'          : '(max-width:  360px)',
+  'large-phone'    : '(max-width:  480px)',
+  'small-tablet'   : '(max-width:  600px)',
+  'tablet'         : '(max-width:  768px)',
+  'large-tablet'   : '(max-width: 1024px)',
+  'laptop'         : '(max-width: 1280px)',
+  'large-laptop'   : '(max-width: 1366px)',
+  'ultra'          : '(max-width: 1600px)'
+);
+
+$breakpointsUp   : (
+  'phone'        : '(min-width:  361px)',
+  'large-phone'  : '(min-width:  481px)',
+  'small-tablet' : '(min-width:  601px)',
+  'tablet'       : '(min-width:  769px)',
+  'large-tablet' : '(min-width: 1025px)',
+  'laptop'       : '(min-width: 1281px)',
+  'large-laptop' : '(min-width: 1367px)',
+  'ultra'        : '(min-width: 1599px)'
+);

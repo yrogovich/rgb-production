@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'rgb-icons';
+  src: url("../fonts/rgb-icons.eot?hd962m");
+  src: url("../fonts/rgb-icons.eot?hd962m#iefix") format("embedded-opentype"), url("../fonts/rgb-icons.ttf?hd962m") format("truetype"), url("../fonts/rgb-icons.woff?hd962m") format("woff"), url("../fonts/rgb-icons.svg?hd962m#rgb-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rgb-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+
+.icon-arrow-left-wide:before {
+  content: "\e901";
+}
+
+.icon-arrow-right:before {
+  content: "\e902";
+}
+
+.icon-arrow-right-wide:before {
+  content: "\e903";
+}
+
+.icon-fb:before {
+  content: "\e904";
+}
+
+.icon-mail:before {
+  content: "\e905";
+}
+
+.icon-phone:before {
+  content: "\e906";
+}
+
+.icon-plus-rounded:before {
+  content: "\e907";
+}
+
+.icon-quote-down:before {
+  content: "\e908";
+}
+
+.icon-quote-up:before {
+  content: "\e909";
+}
+
+.icon-youtube:before {
+  content: "\e90a";
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, a, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img, abbr {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+img,
+iframe,
+figure {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --primary: #1A2254;
+  --primary-light: #1511CB;
+  --secondary: #FFFF08;
+  --selection: #FFFF08;
+  --font-color: #3C3C46;
+  --gray-bg: #141414;
+  --gray-font: #8A8A8A;
+  --body-font-size: 1.6rem;
+  --container-width: 1200px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--body-font-size);
+  color: var(--font-color);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+::-moz-selection {
+  background-color: var(--selection);
+}
+
+::selection {
+  background-color: var(--selection);
+}
+
+img {
+  image-rendering: optimizeQuality;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
