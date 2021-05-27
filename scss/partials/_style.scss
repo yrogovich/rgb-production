@@ -1,1 +1,142 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  &-logo {
+    img {
+      width: 115px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+  &-phone,
+  &-list,
+  &-burger {
+    margin-left: 5%;
+  }
+  &-phone {
+    font-size: 1.8rem;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex: 1 1 30rem;
+    justify-content: flex-end;
+    li {
+      transition: .2s ease-in-out;
+      margin-left: 7.5%;
+      i {
+        font-size: 1.3rem;
+        margin-right: .6rem;
+        opacity: .3;
+        transition: .2s ease-in-out;
+      }
+      &:hover {
+        transform: scale(1.2);
+        i {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &-burger {
+      justify-self: flex-end;
+      width: 88px;
+      height: 88px;
+      transition: .2s ease-in-out;
+
+      border: 1px solid #FFFFFF;
+      border-radius: 50%;
+      position: relative;
+      .line {
+        transition: .2s ease-in-out;
+        position: absolute;
+        height: 2px;
+        background: #FFFFFF;
+        right: 23px;
+
+        &-first {
+          width: 40px;
+          bottom: 42%;
+        }
+        &-second {
+          width: 25px;
+          bottom: 30%;
+        }
+      }
+      .text {
+        transition: .2s ease-in-out;
+        position: absolute;
+        bottom: 50%;
+        right: 23px;
+        font-size: 13px;
+      }
+      
+      &:hover {
+        background-color: #fff;
+        color: var(--font-color);
+        .line {
+          background-color: var(--font-color);
+        }
+      }
+  }
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 14rem;
+    padding: 2rem 0;
+  }
+}
+
+a {
+  transition: .2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.header {  
+  .container-wide {
+    position: relative;
+  }
+  &-home {
+    display: flex;
+    flex-direction: column;
+    
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    background: radial-gradient(circle at 0 0, var(--primary-light), var(--primary));
+  
+    .container-wide {
+      margin-top: auto;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 3.2vw;
+      margin-bottom: 5rem;
+      max-width: 60%;
+    }
+    .scroll-down {
+      position: absolute;
+      right: 15px;
+      bottom: 0;
+
+      .line {
+        width: 1px;
+        height: 62px;
+        margin: auto;
+        margin-top: 1rem;
+        background: linear-gradient(180deg, #fff, transparent);
+      }
+    }
+  }
+}
+
 

@@ -7,6 +7,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
 
+	<?get_template_part('constants')?>
+
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="<?bloginfo( 'template_url' )?>/img/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?bloginfo( 'template_url' )?>/img/favicon/apple-icon-60x60.png">
@@ -31,4 +33,9 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<!-- Custom cursor -->
+<div class="cursor"></div>
+
 <div id="page" class="site">
+	

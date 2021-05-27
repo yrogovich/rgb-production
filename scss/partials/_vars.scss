@@ -1,16 +1,18 @@
 :root {
-    --primary: #1A2254;
-    --primary-light: #1511CB;
-    --secondary: #FFFF08;
+  --primary:       #1A2254;
+  --primary-light: #1511CB;
+  --secondary:     #FFFF08;
+  --selection:     #FFFF08;
+  --font-color:    #3C3C46;
+  --gray-bg:       #141414;
+  --gray-font:     #8A8A8A;
 
-    --selection: #FFFF08;
+  --body-font-size:       1.6rem;
+  --container-width:      1200px;
+  --container-width-wide: 1630px;
 
-    --font-color: #3C3C46;
-    --gray-bg: #141414;
-    --gray-font: #8A8A8A;
-
-    --body-font-size: 1.6rem;
-    --container-width: 1200px;
+  --x: 0;
+  --y: 0;
 }
 
 $breakpointsDown : (
