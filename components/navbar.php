@@ -1,7 +1,7 @@
 <div class="navbar">
   <div class="container-wide">
     <div class="navbar-row">
-      <a href="<?=get_home_url()?>" class="logo navbar-logo">
+      <a href="<?=esc_url( home_url( '/' ) )?>" class="logo navbar-logo">
         <img src="<?bloginfo('template_url')?>/img/logo.svg" alt="logo">
       </a>
 

@@ -4,15 +4,11 @@
 .bold {
     font-weight: bold;
 }
-.block {
-    display: block;
-}
-.text-center {
-    text-align: center;
-}
 .primary {
     color: var(--primary);
 }
-.grid {
-    display: grid;       
+.row-6 {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    gap: 2rem;
 }

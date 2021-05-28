@@ -6,6 +6,7 @@ html {
 
 body {
     @include primaryFont;
+    line-height: 1.5;
     font-size: var(--body-font-size);
     color: var(--font-color);
 }
@@ -28,11 +29,70 @@ body {
     }
 }
 
+.section {
+    padding: 10rem 0;
+}
+
+.link {
+    color: var(--primary-light);
+    position: relative;
+    z-index: 2;
+    transition: .3s ease-in-out;
+    &:after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        background-color: var(--primary-light);
+        opacity: .3;
+        z-index: -1;
+        transition: .3s ease-in-out;
+    }
+    &:hover {
+        color: #fff;
+        &:after {
+            left: -5px;
+            right: -5px;
+            width: auto;
+            height: calc(100% + 10px);
+            opacity: 1; 
+        }
+    }
+    i {
+        font-size: 1.3rem;
+        margin-right: .5rem;
+    }
+}
+
 ::selection {
-    background-color: var(--selection);
+    background-color: var(--primary-light);
+    color: #fff;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: #fff;
 }
 
 img {
     image-rendering: optimizeQuality;
     image-rendering: -webkit-optimize-contrast;
+}
+
+h2, .h2 {
+    font-weight: 900;
+    font-size: 50px;
+    display: inline-block;
+    background: -webkit-linear-gradient(0deg, var(--primary), var(--primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--primary);
+}
+
+h4, .h4 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+h6, .h6 {
+    font-size: 2.8rem;
 }

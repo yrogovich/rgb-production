@@ -6,23 +6,52 @@
   width: 2rem;
   height: 2rem;
   background-color: #000;
-  opacity: .5;
+  opacity: .6;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: background, transform .2s ease-in-out;
+  transition: background, transform .3s cubic-bezier(0.76, -0.54, 0.01, 1.46);
   transform-origin: 80% 80%;
   z-index: 1000000;
 
+  &:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &.white {
     background-color: #fff;
+    &:after {
+      background-color: #000;
+    }
   }
   &.grow {
     transform: scale(3);
+    opacity: .3;
+    z-index: 0;
+    backdrop-filter: invert(1);
+    &:after {
+      display: none;
+    }
   }
   &.burger {
     transform: scale(4);
+    opacity: .3;
     z-index: 0;
+    &:after {
+      display: none;
+    }
+  }
+  &.click {
+    transition: transform .1s ease-in-out;
+    transform: translate(-50%, -50%) scale(.8);
   }
 }
