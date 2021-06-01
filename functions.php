@@ -55,8 +55,10 @@ add_action( 'after_setup_theme', 'rgb_setup' );
  */
 function rgb_scripts() {
 	wp_enqueue_style( 'rgb-style', get_template_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'rgb-swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css' );
 
 	wp_enqueue_script( 'rgb-lazy', 'https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js', array(), false, true );
+	wp_enqueue_script( 'rgb-swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js', array(), false, true );
 	wp_enqueue_script( 'rgb-script', get_template_directory_uri() . '/js/index.js', array(), false, true );
 	
 	wp_enqueue_script( 'rgb-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js', array('rgb-script'), false, true );

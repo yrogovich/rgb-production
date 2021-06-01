@@ -16,6 +16,7 @@ Dillinger uses a number of open source projects to work properly:
 - [Worpress] - HTML enhanced for web apps!
 - [GSAP] - awesome web-based text editor
 - [Swiper slider] - Markdown parser done right. Fast and easy to extend.
+- [Vanilla lazyload] - Markdown parser done right. Fast and easy to extend.
 
 ## Wordpress Plugins
 
@@ -31,3 +32,4 @@ Instructions on how to use them in your own application are linked below.
    [Worpress]: <https://wordpress.org/r>
    [GSAP]: <https://greensock.com/gsap>
    [Swiper slider]: <https://swiperjs.com>
+   [Vanilla lazyload]: <https://www.andreaverlicchi.eu/vanilla-lazyload>

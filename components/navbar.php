@@ -9,14 +9,18 @@
 
       <ul class="navbar-list">
         <li><a href="#"><i class="icon-plus-rounded"></i><?=esc_html__('Стать клиентом', 'rgb')?></a></li>
-        <li><a href="#"><?=esc_html__('Услуги', 'rgb')?></a></li>
-        <li><a href="#"><?=esc_html__('Проекты', 'rgb')?></a></li>
+        <li><a href="/services"><?=esc_html__('Услуги', 'rgb')?></a></li>
+        <li><a href="/projects"><?=esc_html__('Проекты', 'rgb')?></a></li>
       </ul>
 
       <div class="navbar-burger" data-trigger-menu>
-        <div class="text"><?=esc_html__('Меню', 'rgb')?></div>
-        <div class="line line-first"></div>
-        <div class="line line-second"></div>
+        <div class="navbar-burger__common">
+          <div class="text"><?=esc_html__('Меню', 'rgb')?></div>
+          <div class="line line-first"></div>
+          <div class="line line-second"></div>
+        </div>
+       
+        <div class="navbar-burger__close"></div>
       </div>
     </div>
   </div>

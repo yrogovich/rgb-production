@@ -56,6 +56,8 @@
   </footer>
 </div><!-- #page -->
 
+<?get_template_part('components/mobile-menu')?>
+
 <?php wp_footer(); ?>
 
 </body>

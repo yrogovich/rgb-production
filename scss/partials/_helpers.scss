@@ -11,4 +11,8 @@
     display: grid;
     grid-template-columns: repeat(2, 6fr);
     gap: 2rem;
+    @include rwd('large-tablet') {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
 }

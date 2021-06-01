@@ -1,5 +1,8 @@
 * {
   cursor: none;
+  @include rwd('large-tablet') {
+    cursor: pointer;
+  }
 }
 
 .cursor {
@@ -36,7 +39,6 @@
   &.grow {
     transform: scale(3);
     opacity: .3;
-    z-index: 0;
     backdrop-filter: invert(1);
     &:after {
       display: none;
@@ -53,5 +55,9 @@
   &.click {
     transition: transform .1s ease-in-out;
     transform: translate(-50%, -50%) scale(.8);
+  }
+
+  @include rwd('large-tablet') {
+    display: none;
   }
 }
